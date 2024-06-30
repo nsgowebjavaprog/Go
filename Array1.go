@@ -1,25 +1,36 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-	fmt.Println("Wwl-Come To Arrray in GO")
+	/*
+	   	// arrr_name := [size] int {1,2,3,4........}
+	   //1
+	   	marks := [5]int{89, 90, 96}
+	   	fmt.Printf("Marks %v", marks) // Marks [89 90 96 0 0]
+	   	fmt.Println()
 
-	var Fruits_List [5]string
+	   //2
+	   	score := [...]string{"A+", "B+", "A"}
+	   	fmt.Println(score) // [A+ B+ A]
 
-	Fruits_List[1] = "apple"
-	Fruits_List[2] = "Banana"
-	Fruits_List[4] = "Peach"
+	   //3
+	   	var student [3]int
+	   	student[0] = 12
+	   	student[1] = 16
+	   	student[2] = 13
+	   	fmt.Println(student) // [12 16 13]
+	*/
+	// 4
+	// 2-D Array
 
-	fmt.Println("Fruits List as follows: ", Fruits_List) // Fruits List as follows:  [ apple Banana  Peach]
+	var student = [4][2]int{{1, 2}, {3, 4}, {5, 6}, {7, 8}}
+	fmt.Println(student) // [[1 2] [3 4] [5 6] [7 8]]
 
-	fmt.Println("Fruits List as follows: ", len(Fruits_List)) // 5
+	// 3-D
 
-	fmt.Println("Fruits List as follows: ", Fruits_List[3])
-
-	fmt.Println("Fruits List as follows: ", Fruits_List[2]) // Banana
-
-	var Veg_List = [3]string{"potato", "Beans"}
-	fmt.Println(Veg_List) // [potato Beans ]
-
+	var three_D = [2][2][2]int{{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}}
+	fmt.Println(three_D) // [[[1 2] [3 4]] [[5 6] [7 8]]]
 }
