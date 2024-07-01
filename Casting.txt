@@ -1,0 +1,25 @@
+package main:
+This line declares that the file is part of the main package. In Go, every file must start with a package declaration.
+
+import ( "fmt" "strconv" ):
+This line imports the necessary packages for the program. The fmt package is used for formatting and printing output, 
+and the strconv package is used for string conversions.
+
+var pf = fmt.Println:
+This line declares a variable pf and assigns it the value of fmt.Println. This means that pf can be used as a shortcut for fmt.Println.
+
+func main() { ... }:
+This line declares the main function, which is the entry point of the program. 
+The code inside the main function will be executed when the program runs.
+
+AB := 20000:
+This line declares a variable AB and assigns it the value 20000.
+
+BC := strconv.Itoa(AB):
+This line uses the strconv.Itoa function to convert the integer AB to a string and assigns the result to the variable BC.
+ The strconv.Itoa function returns a string representation of the integer.
+
+pf(BC):
+This line uses the pf shortcut (which is equivalent to fmt.Println) to print the value of BC. Since BC is a string, it will print "20000".
+
+So, when you run this program, it will print "20000" to the console.

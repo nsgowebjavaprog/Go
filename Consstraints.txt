@@ -1,0 +1,30 @@
+Importing the fmt Package:
+The code starts by importing the fmt package, which provides functions for formatting and printing output.
+
+Defining a Shortcut for fmt.Println:
+The line var pf = fmt.Println creates a shortcut for fmt.Println, allowing it to be used as pf instead of fmt.Println.
+ This is a common practice to reduce the amount of code needed for printing.
+
+Defining a Type Constraint:
+The line type My_Constraint interface { int | float64 } defines a type constraint named My_Constraint. 
+This constraint specifies that the type must be either int or float64.
+
+Defining a Generic Function:
+The function get_sum_gen is defined with a type parameter T that is constrained to My_Constraint. 
+This means T can be either int or float64.
+
+The function takes two arguments of type T and returns their sum.
+
+Main Function:
+The main function is the entry point of the program.
+
+It uses the pf shortcut to print the results of calling get_sum_gen with different types of arguments:
+get_sum_gen(5, 4) adds two int values and prints the result.
+
+get_sum_gen(23.45, 6.55) adds two float64 values and prints the result.
+
+When you run this code, it will output:
+ 5 + 4 : 9
+ 23.45 + 6.55 : 30
+
+This demonstrates how the generic function get_sum_gen can work with different types, as long as they satisfy the type constraint.
