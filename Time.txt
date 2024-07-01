@@ -1,0 +1,12 @@
+package main:
+This line declares that the file is part of the main package. In Go, every file must start with a package declaration.
+import ( "fmt" "time" ):
+This line imports the necessary packages for the program. The fmt package is used for formatting and printing output, and the time package is used for working with dates and times.
+func main() { ... }:
+This line declares the main function, which is the entry point of the program. The code inside the main function will be executed when the program runs.
+now := time.Now():
+This line declares a variable now and assigns it the current date and time using the time.Now() function.
+fmt.Println(now.Year(), now.Month(), now.Day()):
+This line uses the fmt.Println function to print the year, month, and day of the current date. The now.Year(), now.Month(), and now.Day() functions are used to get the year, month, and day from the now variable.
+fmt.Println(now.Hour(), now.Minute(), now.Second()):
+This line uses the fmt.Println function to print the hour, minute, and second of the current time. The now.Hour(), now.Minute(), and now.Second() functions are used to get the hour, minute, and second from the now variable.
