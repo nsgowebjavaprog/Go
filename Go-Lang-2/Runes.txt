@@ -1,0 +1,33 @@
+package main:
+This line declares that the file is part of the main package. In Go, every file must start with a package declaration.
+
+import ( "fmt" "unicode/utf8" ):
+This line imports the necessary packages for the program. The fmt package is used for formatting and printing output, 
+and the unicode/utf8 package is used for working with Unicode characters.
+
+func main() { ... }:
+This line declares the main function, which is the entry point of the program.
+ The code inside the main function will be executed when the program runs.
+
+user_name := "NAGARAJ_nagaraj":
+This line declares a variable user_name and assigns it the string "NAGARAJ_nagaraj".
+
+fmt.Println("Runes Count: ", utf8.RuneCountInString(user_name)):
+This line uses the fmt.Println function to print the number of runes (Unicode characters) in the user_name string.
+ The utf8.RuneCountInString function is used to count the runes.
+
+for i, runes := range user_name { ... }:
+This line starts a for loop that iterates over the runes in the user_name string. 
+The range keyword is used to iterate over the string, and the loop variables are i (the index) and runes (the rune value).
+
+fmt.Printf("%d : %#U : %c\n", i, runes, runes):
+This line uses the fmt.Printf function to print information about each rune.
+ The format string "%d : %#U : %c\n" specifies the format of the output:
+
+%d is the index i.
+
+%#U is the Unicode code point of the rune in hexadecimal notation.
+
+%c is the character represented by the rune.
+
+The output of this program will be a list of the runes in the user_name string, along with their indices and Unicode code points.

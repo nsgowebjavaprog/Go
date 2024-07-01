@@ -1,0 +1,25 @@
+
+1. package main: This line declares that this file is a Go program's main package.
+
+2. import ( "bufio" "fmt" "log" "os" ): This line imports four packages:
+    - bufio: For buffered input.
+    - fmt: For formatted input/output.
+    - log: For logging errors.
+    - os: For operating system-specific functionality.
+
+3. var pf = fmt.Println: This line creates a shortcut variable pf for the fmt.Println function.
+
+4. func main() { ... }: This is the main function, which is the entry point of the program.
+
+5. pf("Hell, What is Your Name: "): This line prints the message "Hell, What is Your Name: " using the shortcut variable pf.
+
+6. reader := bufio.NewReader(os.Stdin): This line creates a new reader that reads from the standard input (os.Stdin).
+
+7. name, err := reader.ReadString('\n'): This line reads a string from the input until a newline character ('\n') is encountered.
+ The result is stored in the name variable, and any error is stored in the err variable.
+
+8. if err == nil { pf("Hello", name) } else { log.Fatal(err) }: If there's no error, it prints "Hello" followed by the user's input.
+ If there's an error, it logs the error using log.Fatal.
+
+In summary, this program prompts the user for their name, reads the input, and then prints a personalized greeting message. 
+If there's an error during input, it logs the error.

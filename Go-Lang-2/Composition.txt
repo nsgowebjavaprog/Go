@@ -1,0 +1,27 @@
+Defining the contact Struct:
+The code defines a contact struct with three fields: fname, lname, and phone, all of type string. 
+These fields represent the first name, last name, and phone number of a contact.
+
+Defining the business Struct:
+The code defines a business struct with three fields: name, address, and contact.
+ The contact field is of type contact, which means a business struct can hold a contact struct.
+
+Defining the info Method:
+The info method is defined on the business struct. It takes no arguments other than the receiver b of type business.
+
+The method uses fmt.Printf to print a formatted string containing the business name, contact first name, and contact last name.
+
+Main Function:
+The main function is the entry point of the program.
+
+It creates a contact instance con_1 with a first name, last name, and phone number.
+
+It creates a business instance bus_1 with a name, address, and the con_1 contact.
+
+It calls the info method on bus_1 to print the contact information.
+
+When you run this code, it will output:
+
+Contact at : ABC Planning is NSLONI LONI
+
+This demonstrates how to define structs and methods in Go, and how to use them to perform operations and print information.

@@ -1,0 +1,33 @@
+package main:
+This line declares that the file is part of the main package. In Go, every file must start with a package declaration.
+
+import ( "fmt" "reflect" ):
+This line imports the necessary packages for the program. The fmt package is used for formatting and printing output,
+ and the reflect package is used to get the type of a variable.
+
+var pf = fmt.Println:
+This line declares a variable pf and assigns it the value of fmt.Println.
+ This means that pf can be used as a shortcut for fmt.Println.
+
+func main() { ... }:
+This line declares the main function, which is the entry point of the program. The code inside the main function will be
+ executed when the program runs.
+
+pf(reflect.TypeOf(27)):
+This line uses the reflect.TypeOf function to get the type of the integer 27 and then prints it using pf. The output will be int.
+
+pf(reflect.TypeOf(3.34)):
+This line uses the reflect.TypeOf function to get the type of the floating-point number 3.34 and then prints it using pf.
+ The output will be float64.
+
+pf(reflect.TypeOf(true)):
+This line uses the reflect.TypeOf function to get the type of the boolean true and then prints it using pf. The output will be bool.
+
+pf(reflect.TypeOf("Hello")):
+This line uses the reflect.TypeOf function to get the type of the string "Hello" and then prints it using pf. The output will be string.
+
+pf(reflect.TypeOf('@')):
+This line uses the reflect.TypeOf function to get the type of the character '@' and then prints it using pf.
+ The output will be int32, which is the type of a rune in Go.
+ 
+In summary, this program uses the reflect package to get the types of various variables and then prints those types using the fmt.Println function.
