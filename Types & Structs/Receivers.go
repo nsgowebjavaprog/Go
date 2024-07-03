@@ -10,13 +10,21 @@ func (m *my_struct) printFirst_Name() string {
 	return m.First_Name
 }
 
+// printFirst_Name ----> method
+//
+
 func main() {
 	var my_var1 my_struct
 	my_var1.First_Name = "NS"
 
-	my_var2 := my_struct{
-		First_Name: "Loni",
-	}
+	var my_var2 my_struct
+	my_var2.First_Name = "Loni"
+
+	//       {OR}
+	//my_var2 := my_struct{
+	//	First_Name: "Loni",
+	//}
+
 	log.Println("my_var_1: ", my_var1.printFirst_Name())
 	log.Println("my_var_2: ", my_var2.printFirst_Name())
 }
